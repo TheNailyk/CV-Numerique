@@ -3,16 +3,31 @@ header{
     height : 50px;
     font-color : white;
     text-align : center;
-    display : flex;
     align-items : center;
+    display : flex;
+    justify-content : center;
+
 }
 
 header nav{
-    background-color : gray;
 }
 
 header nav a{
     color : white;
     text-decoration : none;
+    border-radius : 10px;
+    display : inline-blocks;
+    padding : 2px 20px;
+
+}
+
+header nav a:hover{
+    color : green;
+    background-color : darkgrey;
+}
+
+
+.selected {
+    background-color : blue;
 }
 
