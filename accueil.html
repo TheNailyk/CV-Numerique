@@ -1,60 +1,75 @@
 <!DOCTYPE HTML>
-
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <title>Accueil</title>
-
-    <link rel="icon" href="Images/DALL·E%202025-03-19%2016.04.33%20-%20A%20blue%20steam%20train%20inspired%20by%20Thomas%20the%20Tank%20Engine,%20with%20a%20human-like%20face%20featuring%20dark%20skin%20tone,%20friendly%20eyes,%20and%20a%20bright%20smile.%20The%20train%20i.webp">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accueil - CV de Kylian Allard Guerente</title>
     <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/page.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
-
 <body>
+<header>
+    <nav>
+        <a href="accueil.html" class="selected">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="formations.html">Formations</a>
+        <a href="experiences.html">Expériences</a>
+    </nav>
+</header>
 
-    <header>
-        <nav>
-            <a href="accueil.html" class="selected">Accueil</a>
-            <a href="competences.html">Compétences</a>
-            <a href="projets.html">Projets</a>
-            <a href="formations.html">Formations</a>
-            <a href="experiences.html">Expériences</a>
-        </nav>
-    </header>
 
-    <main>
-        
-        <div class="banner-name">
-            <img src="Images/ALLARD-GUERENTE20portraits20iut20info-389.jpg" alt="Photo">
+<main>
+    <section class="banner-name">
+        <img src="Images/ALLARD-GUERENTE20portraits20iut20info-389.jpg" alt="Photo de profil">
+        <div class="banner-text">
             <h1>Kylian Allard Guerente</h1>
+            <p class="intro-small">Étudiant en BUT Informatique — 2ème année — Passionné par le développement de jeux vidéo et les applications Java.</p>
         </div>
+    </section>
 
-        <section class="texte-intro">
-            <pre>Je suis Kylian ALLARD GUERENTE !
-Actuellement étudiant en BUT Informatique, en ce moment en 2e année, à l’IUT de l’Université de Lille.
 
-Je suis quelqu'un d'ambitieux, j’ai toujours voulu créer des jeux vidéos, c’est un domaine que j’adore et je m’améliore constamment pour atteindre ce but.
-C'est dans cette optique que j’ai vu les notions d’algorithmique, notamment en Java, les gestions de base de données avec PostgreSQL.
-Je serai donc très enthousiaste à l’obtention d’un stage en tant que développeur Java !
+    <section class="texte-intro">
+        <p>
+            Je suis Kylian ALLARD GUERENTE !
+            Actuellement étudiant en BUT Informatique, en ce moment en 2e année, à l’IUT de l’Université de Lille.
 
-Dans ce cadre, j’ai réalisé plusieurs jeux et applications en Java, comme un jeu nommé Gamblor (jeux d’argents avec système de magasin et gestion de stress) en terminal Linux et en équipe dans un contexte d’agilité, une calculatrice en projet personnel avec JavaSwing ou encore une application d’appariement étudiante avec JavaFX.
+            Je suis quelqu'un d'ambitieux, j’ai toujours voulu créer des jeux vidéos, c’est un domaine que j’adore et je m’améliore constamment pour atteindre ce but.
+            C'est dans cette optique que j’ai vu les notions d’algorithmique, notamment en Java, les gestions de base de données avec PostgreSQL.
+            Je serai donc très enthousiaste à l’obtention d’un stage en tant que développeur Java !
 
-Je m’engage souvent dans des débats et activités amicales ce qui me rend très communicatif, assez sympathique et toujours à l’écoute des autres qui est à mes yeux primordial pour tout domaine !
-</pre>
-        </section>
-        
-    <h2>Bienvenue sur le CV numérique de Kylian Allard Guerente</h2>
+            Dans ce cadre, j’ai réalisé plusieurs jeux et applications en Java, comme un jeu nommé Gamblor (jeux d’argents avec système de magasin et gestion de stress) en terminal Linux et en équipe dans un contexte d’agilité, une calculatrice en projet personnel avec JavaSwing ou encore une application d’appariement étudiante avec JavaFX.
 
-    <pre></pre>
+            Je m’engage souvent dans des débats et activités amicales ce qui me rend très communicatif, assez sympathique et toujours à l’écoute des autres qui est à mes yeux primordial pour tout domaine !
 
-    </main>
+        </p>
+    </section>
 
-    <footer>
-        Bienvenue en bas de la page
-    </footer>
+
+    <section class="interests">
+        <h2>Mes centres d'intérêts</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="Images/Jeu%20Video.jpg" alt="Intérêt 1">
+                <img src="Images/musique.png" alt="Intérêt 2">
+                <img src="Images/histoire.jpg" alt="Intérêt 3">
+                <img src="Images/geo.jpg" alt="Intérêt 4">
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<footer>
+    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn :  </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
+</footer>
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
-
 </html>

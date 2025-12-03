@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Expériences</title>
-    <link rel="icon" href="Images/DALL·E%202025-03-19%2016.04.33%20-%20A%20blue%20steam%20train%20inspired%20by%20Thomas%20the%20Tank%20Engine,%20with%20a%20human-like%20face%20featuring%20dark%20skin%20tone,%20friendly%20eyes,%20and%20a%20bright%20smile.%20The%20train%20i.webp">
-
     <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/page.css">
-
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="accueil.html">Accueil</a>
-            <a href="competences.html">Compétences</a>
-            <a href="projets.html">Projets</a>
-            <a href="formations.html">Formations</a>
-            <a href="experiences.html" class="selected">Expériences</a>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="formations.html">Formations</a>
+        <a href="experiences.html" class="selected">Expériences</a>
+    </nav>
+</header>
 
-    <main>
 
-    <h1>Expériences</h1>
+<main class="container">
+    <h2>Expériences</h2>
 
-    <h2></h2>
 
-    </main>
+    <section class="experience-list">
+        <article>
+            <h4>Stage / Mission 1 — Développeur Java</h4>
+            <p>Entreprise X — Dates — Bref descriptif des tâches et réalisations.</p>
+        </article>
 
-    <footer>
-        Bienvenue en bas de la page
-    </footer>
+
+        <article>
+            <h4>Projet tutoré — Gamblor</h4>
+            <p>Conception et réalisation d'un jeu en terminal (gestion de l'argent, logique métier, travail en équipe).</p>
+        </article>
+
+
+        <!-- Ajoutez ici toutes vos expériences (stage, job étudiant, association, tutorat...) -->
+    </section>
+</main>
+
+
+<footer>
+    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn :  </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
+</footer>
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

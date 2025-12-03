@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Formations</title>
-    <link rel="icon" href="Images/DALL·E%202025-03-19%2016.04.33%20-%20A%20blue%20steam%20train%20inspired%20by%20Thomas%20the%20Tank%20Engine,%20with%20a%20human-like%20face%20featuring%20dark%20skin%20tone,%20friendly%20eyes,%20and%20a%20bright%20smile.%20The%20train%20i.webp">
-
     <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/page.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="accueil.html">Accueil</a>
-            <a href="competences.html">Compétences</a>
-            <a href="projets.html">Projets</a>
-            <a href="formations.html" class="selected">Formations</a>
-            <a href="experiences.html">Expériences</a>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="formations.html" class="selected">Formations</a>
+        <a href="experiences.html">Expériences</a>
+    </nav>
+</header>
 
-    <main>
 
-    <h1>Formations</h1>
+<main class="container">
+    <h2>Formations</h2>
 
-    <h2></h2>
 
-    </main>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">2023 - présent</div>
+            <div class="timeline-content">
+                <h4>BUT Informatique — Université de Lille</h4>
+                <p>2ème année — spécialisation &amp; projets Java.</p>
+            </div>
+        </div>
 
-    <footer>
-        Bienvenue en bas de la page
-    </footer>
-</body>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2020 - 2023</div>
+            <div class="timeline-content">
+                <h4>Baccalauréat Scientifique (ou autre)</h4>
+                <p>Option informatique / maths.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn :  </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
+</footer>
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script></body>
 </html>
