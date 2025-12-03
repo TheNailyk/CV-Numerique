@@ -1,37 +1,3 @@
-/*header{*/
-/*    background-color : black;*/
-/*    height : 50px;*/
-/*    font-color : white;*/
-/*    text-align : center;*/
-/*    align-items : center;*/
-/*    display : flex;*/
-/*    justify-content : center;*/
-
-/*}*/
-
-/*header nav{*/
-/*}*/
-
-/*header nav a{*/
-/*    color : white;*/
-/*    text-decoration : none;*/
-/*    border-radius : 10px;*/
-/*    display : inline-blocks;*/
-/*    padding : 2px 20px;*/
-
-/*}*/
-
-/*header nav a:hover{*/
-/*    color : black;*/
-/*    background-color : darkgrey;*/
-/*}*/
-
-
-/*.selected {*/
-/*    background-color : white;*/
-/*    color : black;*/
-/*}*/
-
 header{
     background-color: #111;
     height: 60px;
