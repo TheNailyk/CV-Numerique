@@ -23,6 +23,46 @@ body{
     margin-right : 5%;
 }
 
+/*Accueil */
+
+/* Banniere Photo et nom*/
+
+.banner-name{
+    display : flex;
+    height : 320px;
+    align-items : center;
+    justify-content : center;
+    background-color : grey;
+
+}
+
+.banner-name img {
+    padding : 2%;
+    height : 300px;
+    width : 300px;
+    border-radius: 50%;
+    background-color : grey;
+    border-radius : 50%;
+}
+
+
+.banner-name h1 {
+    height : 90%;
+    width : 80%;
+    font-size : 500%;
+    text-align : center;
+    background-color : grey;
+}
+
+/*texte intro*/
+
+.texte-intro{
+}
+
+/* Competences */
+
+/* Projets */
+
 /* Projet individuel*/
 
 .project{
@@ -36,3 +76,7 @@ body{
 .project:hover{
     transform: scale(1.2);
 }
+
+/* Formations */
+
+/* Experiences */
