@@ -1,6 +1,17 @@
 /* Reset simple */
 *{box-sizing:border-box}
 
+.gif-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background: url("../Images/fond.gif") center center;
+    background-size:cover;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin : 0%;
@@ -8,10 +19,10 @@ body{
     display:flex;
     min-height:100vh;
     flex-direction:column;
-    background: url("../Images/fond.gif") no-repeat center center fixed;
-    background-size: cover;
+}
 
-
+body pre{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -49,34 +60,44 @@ main{
 
 
 .texte-intro{
-    max-width:900px;
-    margin:20px auto;
-    text-align: left;
+    max-width:100%;
+    margin:10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
+    background-color:rgba(256, 256, 256, 0.7);
+    border-radius: 15px;
+    padding:10px;
 }
 
 
 /* Carousel intérêts */
 .interests{
     max-width:900px;
-    margin:30px auto
+    margin:30px auto;
+    padding:5px 20px 20px 20px;
+    text-align: center;
+    background-color:rgba(256, 256, 256, 0.7);
 }
 
 .carousel{
     overflow:hidden;
-    border-radius:8px
+    border-radius:8px;
+    width:100%;
 }
 
 .carousel-track{
     display:flex;
-    width:calc(4 * 100%);
-    animation:scroll 16s linear infinite
+    gap:0;
+    width:max-content;
 }
 
 .carousel-track img{
-    width:100%;
-    flex:0 0 100%;
-    object-fit:cover;
-    height:280px
+    width:auto;
+    height:500px;
+    object-fit:contain;
+    flex:0 0 auto;
 }
 
 @keyframes scroll{0%{transform:translateX(0)}25%{transform:translateX(-100%)}50%{transform:translateX(-200%)}75%{transform:translateX(-300%)}100%{transform:translateX(0)}}
@@ -91,6 +112,14 @@ main{
     background:#ddd;
     padding:50px;
     margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container h2{
+    font-size:2.5rem;
+    font-weight: bolder;
 }
 
 /* Projet individuel*/
@@ -102,6 +131,7 @@ main{
    margin-bottom:18px;
    box-shadow:0 2px 6px rgba(0,0,0,0.1);
    transition:transform .2s ease;
+    text-align: justify;
 }
 
 .project:hover{
@@ -145,6 +175,19 @@ main{
     border: #111111 1px solid;
     border-radius:8px;
     padding:16px;
+}
+
+.timeline-image{
+    margin-top: 10px;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+
+.timeline-image img{
+    max-width:120px;
+    height:auto;
+    object-fit:contain;
 }
 
 /* Competences */

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
+<div class="gif-bg"></div>
 <header>
     <nav>
         <a href="accueil.html" class="selected">Accueil</a>
@@ -31,7 +32,7 @@
 
 
     <section class="texte-intro">
-        <p>
+        <pre>
             Je suis Kylian ALLARD GUERENTE !
             Actuellement étudiant en BUT Informatique, en ce moment en 2e année, à l’IUT de l’Université de Lille.
 
@@ -46,15 +47,15 @@
             Je m’engage souvent dans des débats et activités amicales ce qui me rend très communicatif,
             assez sympathique et toujours à l’écoute des autres qui est à mes yeux primordial pour tout domaine !
 
-        </p>
+        </pre>
     </section>
 
 
     <section class="interests">
         <h2>Mes centres d'intérêts</h2>
         <div class="carousel">
-            <div class="carousel-track">
-                <img src="Images/Jeu%20Video.jpg" alt="Intérêt 1">
+            <div class="carousel-track js-carousel-track">
+                <img src="Images/Jeu Video.jpg" alt="Intérêt 1">
                 <img src="Images/musique.png" alt="Intérêt 2">
                 <img src="Images/histoire.jpg" alt="Intérêt 3">
                 <img src="Images/geo.jpg" alt="Intérêt 4">
@@ -73,6 +74,38 @@
 
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    /*
+ Carrousel infini auto avec duplication dynamique
+*/
+    (function(){
+        const track = document.querySelector('.js-carousel-track');
+        if(!track) return;
+
+        const images = [...track.children];
+
+        // on clone toutes les images pour l’effet boucle
+        images.forEach(img => {
+            const clone = img.cloneNode(true);
+            track.appendChild(clone);
+        });
+
+        let pos = 0;
+        const speed = 2; // vitesse (px/frame)
+
+        function loop(){
+            pos -= speed;
+            track.style.transform = `translateX(${pos}px)`;
+
+            // si on a scrollé toute la première série d'images, on remonte
+            if(Math.abs(pos) >= track.scrollWidth / 2){
+                pos = 0;
+            }
+            requestAnimationFrame(loop);
+        }
+
+        loop();
+    })();
 </script>
 </body>
 </html>
