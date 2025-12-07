@@ -22,8 +22,16 @@ header nav a{
 header nav a:hover{ background-color:#ddd; color:#111; }
 header nav a.selected{ background:#fff; color:#111; }
 
-
 @media (max-width:600px){
     header{height:auto; padding:8px}
     header nav{display:flex; flex-wrap:wrap; gap:6px}
+}
+
+.not-used{
+    color:grey;
+}
+
+.not-used:hover{
+    color:grey;
+    background:#111;
 }

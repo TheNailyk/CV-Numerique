@@ -27,3 +27,8 @@ footer{
     gap : 15%;
     flex-grow : 3;
 }
+
+footer a{
+    color : red;
+    text-decoration : none;
+}

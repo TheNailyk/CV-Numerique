@@ -16,7 +16,7 @@
         <a href="competences.html">Compétences</a>
         <a href="projets.html">Projets</a>
         <a href="formations.html">Formations</a>
-        <a href="experiences.html">Expériences</a>
+        <a class="not-used">Expériences</a>
     </nav>
 </header>
 
@@ -68,36 +68,31 @@
 
 
 <footer>
-    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn :  </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
+    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail : kylianallard@gmail.com — LinkedIn :  &nbsp;</p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”>LinkedIn</a>
 </footer>
 
 
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    /*
- Carrousel infini auto avec duplication dynamique
-*/
     (function(){
         const track = document.querySelector('.js-carousel-track');
         if(!track) return;
 
         const images = [...track.children];
 
-        // on clone toutes les images pour l’effet boucle
         images.forEach(img => {
             const clone = img.cloneNode(true);
             track.appendChild(clone);
         });
 
         let pos = 0;
-        const speed = 2; // vitesse (px/frame)
+        const speed = 2;
 
         function loop(){
             pos -= speed;
             track.style.transform = `translateX(${pos}px)`;
 
-            // si on a scrollé toute la première série d'images, on remonte
             if(Math.abs(pos) >= track.scrollWidth / 2){
                 pos = 0;
             }
