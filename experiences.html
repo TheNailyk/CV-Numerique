@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,32 +9,57 @@
     <link rel="stylesheet" href="CSS/page.css">
     <link rel="stylesheet" href="CSS/footer.css">
 </head>
-<body>
-<div class="gif-bg"></div>
-<header>
-    <nav>
-        <a href="accueil.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="projets.html">Projets</a>
-        <a href="formations.html">Formations</a>
-        <a href="experiences.html" class="selected">Expériences</a>
-    </nav>
-</header>
+
+<body class="experiences-page">
+    <div class="gif-bg"></div>
+    <header>
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="competences.html">Compétences</a>
+            <a href="projets.html">Projets</a>
+            <a href="formations.html">Formations</a>
+            <a href="experiences.html" class="selected">Expériences</a>
+            <link rel="stylesheet" href="CSS/experiences.css">
+        </nav>
+    </header>
 
 
-<main class="container-experience">
-    <h1>CETTE LISTE EST INCOMPLÈTE</h1>
-    <h1>VOUS POUVEZ AIDER À L'ÉTENDRE</h1>
-</main>
+
+    <main class="container">
+        <h1 style="color: #fff;">Expériences professionnelles</h1>
+        <section class="experiences-list">
+            <article class="experience-item card">
+                <div class="experience-meta">
+                    <strong>Avril 2026 - Juin 2026</strong>
+                    <div>Stage</div>
+                    <div>Studio Indépendant</div>
+                </div>
+                <div class="experience-body">
+                    <h3>Développeur - Stage en équipe IT</h3>
+                    <h3>Car Studio - Filiale R&D de Norauto</h3>
+                    <p>Automatisation des processus de comptabilité (frais et amortissement) avec AppScript</p>
+                    <p>Migration AWS-Azure d'un Serverless API OTA</p>
+                    <p>Responsabilités :</p>
+                    <ul>
+                        <li>Réunions d'équipe</li>
+                        <li>Développement de fonctionnalités</li>
+                        <li>Documentation technique</li>
+                        <li>Maintenance du code</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
 
 
-<footer>
-    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn :  </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
-</footer>
+    <footer>
+        <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn : </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
+    </footer>
 
 
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,38 @@
+.experiences-page main.container{max-width:1100px;margin:20px auto;padding:0}
+
+.experiences-page .experiences-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:20px;
+  padding:10px;
+}
+
+.experiences-page .experience-item{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.55);
+  transition:transform .14s ease, box-shadow .14s ease;
+}
+
+.experiences-page .experience-item:hover{transform:translateY(-6px);box-shadow:0 20px 46px rgba(2,6,23,0.65)}
+
+.experiences-page .experience-meta{
+  min-width:140px;
+  color:var(--muted,#94a3b8);
+  font-size:0.95rem;
+}
+
+.experiences-page .experience-meta strong{display:block;color:#fff;margin-bottom:6px}
+
+.experiences-page .experience-body h3{margin:0;color:#fff;font-size:1.05rem}
+.experiences-page .experience-body p, .experiences-page .experience-body ul{color:var(--muted,#94a3b8);margin:8px 0}
+.experiences-page .experience-body ul{padding-left:18px}
+
+@media(max-width:700px){
+  .experiences-page .experience-item{flex-direction:column}
+  .experiences-page .experience-meta{min-width:unset}
+}

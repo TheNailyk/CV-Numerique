@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,31 +9,32 @@
     <link rel="stylesheet" href="CSS/page.css">
     <link rel="stylesheet" href="CSS/footer.css">
 </head>
+
 <body>
-<div class="gif-bg"></div>
-<header>
-    <nav>
-        <a href="accueil.html" class="selected">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="projets.html">Projets</a>
-        <a href="formations.html">Formations</a>
-        <a class="not-used">Expériences</a>
-    </nav>
-</header>
+    <div class="gif-bg"></div>
+    <header>
+        <nav>
+            <a href="accueil.html" class="selected">Accueil</a>
+            <a href="competences.html">Compétences</a>
+            <a href="projets.html">Projets</a>
+            <a href="formations.html">Formations</a>
+            <a href="experiences.html">Expériences</a>
+        </nav>
+    </header>
 
 
-<main>
-    <section class="banner-name">
-        <img src="Images/ALLARD-GUERENTE20portraits20iut20info-389.jpg" alt="Photo de profil">
-        <div class="banner-text">
-            <h1>Kylian Allard Guerente</h1>
-            <p class="intro-small">Étudiant en BUT Informatique --- 2ème année --- Passionné par le développement de jeux vidéo.</p>
-        </div>
-    </section>
+    <main>
+        <section class="banner-name">
+            <img src="Images/ALLARD-GUERENTE20portraits20iut20info-389.jpg" alt="Photo de profil">
+            <div class="banner-text">
+                <h1>Kylian Allard Guerente</h1>
+                <p class="intro-small">Étudiant en BUT Informatique --- 2ème année --- Passionné par le développement de jeux vidéo.</p>
+            </div>
+        </section>
 
 
-    <section class="texte-intro">
-        <pre>
+        <section class="texte-intro">
+            <pre>
             Je suis Kylian ALLARD GUERENTE !
             Actuellement étudiant en BUT Informatique, en ce moment en 2e année, à l’IUT de l’Université de Lille.
 
@@ -48,59 +50,60 @@
             assez sympathique et toujours à l’écoute des autres qui est à mes yeux primordial pour tout domaine !
 
         </pre>
-    </section>
+        </section>
 
 
-    <section class="interests">
-        <h2>Mes centres d'intérêts</h2>
-        <div class="carousel">
-            <div class="carousel-track js-carousel-track">
-                <img src="Images/Jeu Video.jpg" alt="Intérêt 1">
-                <img src="Images/musique.png" alt="Intérêt 2">
-                <img src="Images/histoire.jpg" alt="Intérêt 3">
-                <img src="Images/geo.jpg" alt="Intérêt 4">
+        <section class="interests">
+            <h2>Mes centres d'intérêts</h2>
+            <div class="carousel">
+                <div class="carousel-track js-carousel-track">
+                    <img src="Images/Jeu Video.jpg" alt="Intérêt 1">
+                    <img src="Images/musique.png" alt="Intérêt 2">
+                    <img src="Images/histoire.jpg" alt="Intérêt 3">
+                    <img src="Images/geo.jpg" alt="Intérêt 4">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-</main>
+    </main>
 
 
-<footer>
-    <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail : kylianallard@gmail.com — LinkedIn :  &nbsp;</p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”>LinkedIn</a>
-</footer>
+    <footer>
+        <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail : kylianallard@gmail.com — LinkedIn : &nbsp;</p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”>LinkedIn</a>
+    </footer>
 
 
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-    (function(){
-        const track = document.querySelector('.js-carousel-track');
-        if(!track) return;
+        (function() {
+            const track = document.querySelector('.js-carousel-track');
+            if (!track) return;
 
-        const images = [...track.children];
+            const images = [...track.children];
 
-        images.forEach(img => {
-            const clone = img.cloneNode(true);
-            track.appendChild(clone);
-        });
+            images.forEach(img => {
+                const clone = img.cloneNode(true);
+                track.appendChild(clone);
+            });
 
-        let pos = 0;
-        const speed = 2;
+            let pos = 0;
+            const speed = 2;
 
-        function loop(){
-            pos -= speed;
-            track.style.transform = `translateX(${pos}px)`;
+            function loop() {
+                pos -= speed;
+                track.style.transform = `translateX(${pos}px)`;
 
-            if(Math.abs(pos) >= track.scrollWidth / 2){
-                pos = 0;
+                if (Math.abs(pos) >= track.scrollWidth / 2) {
+                    pos = 0;
+                }
+                requestAnimationFrame(loop);
             }
-            requestAnimationFrame(loop);
-        }
 
-        loop();
-    })();
-</script>
+            loop();
+        })();
+    </script>
 </body>
+
 </html>

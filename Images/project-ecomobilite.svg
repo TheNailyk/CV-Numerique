@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="100%" height="100%" fill="#06221c" />
+  <rect x="18" y="18" width="564" height="324" rx="12" fill="#07302a" stroke="#34d399" stroke-width="3"/>
+  <text x="50%" y="50%" font-family="Segoe UI, Roboto, Arial" font-size="24" fill="#9ef1d9" text-anchor="middle" dominant-baseline="middle">Écomobilité</text>
+</svg>
