@@ -7,10 +7,11 @@
     <title>Projets</title>
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/page.css">
+    <link rel="stylesheet" href="CSS/projects.css">
     <link rel="stylesheet" href="CSS/footer.css">
 </head>
 
-<body>
+<body class="projets-page">
     <div class="gif-bg"></div>
     <header>
         <nav>
@@ -24,278 +25,704 @@
 
     <main>
         <div class="container">
-            <h2>Projets scolaires</h2>
-            <div class="projects-grid">
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-culture-quest.svg" alt="Culture Quest">
-                        <div>
-                            <h3>Culture Quest</h3>
-                            <p>Description du projet :</p>
-                        </div>
+            <section class="project-category" data-category="school">
+                <div class="category-header">
+                    <div class="category-info">
+                        <span class="category-label">Projets scolaires</span>
+                        <h2>Projets scolaires</h2>
+                        <p>Projets réalisés dans le cadre de la SAÉ, des cours ou d'un travail encadré. Chaque slide présente le contexte, les objectifs, ton rôle et ton impact.</p>
                     </div>
-                    <p>Culture Quest est un RPG rogue like tour par tour à la japonaise, il suit une histoire soigneusement fabriquée (en s'inspirant de J-RPG cultes) et un système de combat digne des plus grands qui stimule les connaissances culturelles.
-                        Enchainez les combats et arrivez au boss final pour SAUVER la PLANÈTE avec votre CULTURE ! Tout cela codé en IJava !</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Compétences algorithmiques</li>
-                            <li>Compréhension de IJava</li>
-                            <li>Diviser pour régner</li>
-                            <li>Gestion de fichiers et organisation</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Savoir communiquer</li>
-                            <li>Voir les difficultés de chacun pour favoriser l’entraide</li>
-                            <li>Savoir être patient et persévérant pour trouver la meilleure solution au problème, ne pas être hâtif</li>
-                        </ul>
+                    <div class="category-controls">
+                        <button class="carousel-button prev" type="button" aria-label="Projet scolaire précédent">‹</button>
+                        <button class="carousel-button next" type="button" aria-label="Projet scolaire suivant">›</button>
                     </div>
                 </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-cubyrinthe.svg" alt="Cubyrinthe">
-                        <div>
-                            <h3>Cubyrinthe</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Cubyrinthe est un jeu de résolution de labyrinthes, avec des labyrinthes aléatoires et parfaits, une gestion de comptes et de BDD, et tout un système de progression avec étapes et gameplays différents comme de l'exploration, la position
-                        du joueur inconnue, la découverte de la carte et plus !</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Maîtriser le langage Java (types, fonctions, packages, ouvrir/fermer fichiers...)</li>
-                            <li>Maîtriser les théories des IHM (Bertin, Fitts...) pour créer une interface</li>
-                            <li>Maîtriser les théories des graphes (Chemin optimal, pondération…)</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Savoir communiquer</li>
-                            <li>Voir les difficultés de chacun pour favoriser l’entraide</li>
-                            <li>Savoir consulter et comprendre la documentation Java</li>
-                            <li>Savoir répartir les tâches entre les membres de l’équipe</li>
-                        </ul>
+                <div class="project-carousel">
+                    <div class="project-track">
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-culture-quest.svg" alt="Culture Quest">
+                                        <div class="project-header-content">
+                                            <h3>Culture Quest</h3>
+                                            <p>RPG éducatif développé en IJava pour renforcer la culture générale par le jeu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>SAÉ de programmation, travail d'équipe sur un jeu vidéo éducatif.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Cours scolaire en programmation, projet collectif en binôme/équipe.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Développeur principal du système de combat, de la narration et de l'architecture de code.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Jeu fonctionnel avec système de combat, progression scénarisée et interactions culturelles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Créer un RPG tour par tour immersif, structurer un gameplay éducatif et proposer une expérience motivante pour apprendre.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/menuCultureQuest.png" alt="Illustration Culture Quest">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>Programmation en IJava</li>
+                                                <li>Algorithmie pour IA de combat</li>
+                                                <li>Architecture modulaire et gestion de fichiers</li>
+                                                <li>Conception d'interface utilisateur pour jeu éducatif</li>
+                                                <li>Tests fonctionnels et débogage de mécanique</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Communication et coordination d'équipe</li>
+                                                <li>Patience, rigueur et test continu</li>
+                                                <li>Capacité à expliquer une mécanique complexe</li>
+                                                <li>Priorisation des actions en phase de développement</li>
+                                                <li>Réception et intégration des retours</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-cubyrinthe.svg" alt="Cubyrinthe">
+                                        <div class="project-header-content">
+                                            <h3>Cubyrinthe</h3>
+                                            <p>Jeu de labyrinthe avec génération procédurale et gestion de comptes utilisateur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet de cours autour des algorithmes et des graphes.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Projet encadré portant sur les structures de données et l'interface utilisateur.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Conception du générateur de labyrinthe et intégration du suivi de progression.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Application stable avec niveaux aléatoires, envies de progression et sauvegarde des scores.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Proposer des labyrinthes variés, un système de progression et une expérience de jeu claire pour l'utilisateur.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/project-cubyrinthe.svg" alt="Illustration Cubyrinthe">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>Maîtrise des graphes et algorithmes de labyrinthe</li>
+                                                <li>Programmation Java et gestion de comptes utilisateur</li>
+                                                <li>Conception d'IHM pour exploration et découverte</li>
+                                                <li>Génération procédurale et équilibrage de difficulté</li>
+                                                <li>Validation de stabilité et tests de parcours</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Travail organisé et documentation</li>
+                                                <li>Communication avec l'équipe sur les choix de conception</li>
+                                                <li>Adaptation du gameplay aux besoins utilisateurs</li>
+                                                <li>Analyse des retours et amélioration continue</li>
+                                                <li>Gestion du temps et respect des jalons</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/appariement.png" alt="Appariement">
+                                        <div class="project-header-content">
+                                            <h3>Application d'appariement</h3>
+                                            <p>Application Java pour optimiser l'appariement de participants selon leurs affinités.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet de cours lié aux algorithmes de graphe et aux systèmes de recommandation.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Travail réalisé en équipe autour d'un cahier des charges précis.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Développement de l'algorithme d'appariement et de l'interface JavaFX.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Solution opérationnelle avec une interface claire et un algorithme d'affinité implémenté.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Créer une application capable de rapprocher des profils selon des critères définis et de proposer un appariement optimal.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/appariement.png" alt="Illustration Appariement">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>Algorithmes de graphe et appariement</li>
+                                                <li>Java et JavaFX</li>
+                                                <li>Conception de calculs d'affinité</li>
+                                                <li>Modélisation de données utilisateur</li>
+                                                <li>Tests de robustesse et validation métier</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Respect du cahier des charges</li>
+                                                <li>Capacité à intégrer des retours</li>
+                                                <li>Communication sur les choix techniques</li>
+                                                <li>Collaboration et alignement avec l'équipe</li>
+                                                <li>Présentation de résultats fonctionnels</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-gamblor.svg" alt="Gamblor">
+                                        <div class="project-header-content">
+                                            <h3>Gamblor</h3>
+                                            <p>Jeu de casino développé en Java avec gestion de bankroll et décisions de joueur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet scolaire basé sur la logique de jeu.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Développement d'un prototype de jeu avec un focus sur l'expérience utilisateur.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Conception de la mécanique de jeu, gestion des règles et de la progression.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Prototype fonctionnel avec plusieurs mini-jeux et gestion de ressources.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Simuler les décisions d'un joueur de casino, équilibrer le risque et proposer un chemin de progression.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/project-gamblor.svg" alt="Illustration Gamblor">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>Programmation Java</li>
+                                                <li>Gestion de règles de jeu et logique métier</li>
+                                                <li>Design d'expérience utilisateur</li>
+                                                <li>Équilibrage de mécaniques et tests de jeu</li>
+                                                <li>Intégration de ressources graphiques</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Prise d'initiative</li>
+                                                <li>Analyse des retours pour améliorer le gameplay</li>
+                                                <li>Organisation et gestion du temps</li>
+                                                <li>Résolution de problèmes techniques</li>
+                                                <li>Esprit d'innovation ludique</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-cv.svg" alt="CV Numérique">
+                                        <div class="project-header-content">
+                                            <h3>CV Numérique</h3>
+                                            <p>Site portfolio conçu pour présenter des compétences, projets et expériences de manière claire.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet de présentation personnelle dans le cadre du CV numérique.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Travail individuel pour mettre en valeur les réalisations et le style graphique.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Design, structure, contenu, HTML/CSS et intégration web.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>CV web responsive et professionnel, compatible mobile avec navigation claire.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Créer une page efficace, lisible et moderne pour valoriser le profil et faciliter l'accès aux informations.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/cvnumerique.png" alt="Illustration CV Numérique">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>HTML et CSS</li>
+                                                <li>Responsive design</li>
+                                                <li>Structuration de contenu</li>
+                                                <li>Mise en forme typographique</li>
+                                                <li>Intégration d'une navigation fluide</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Direction artistique</li>
+                                                <li>Autonomie complète</li>
+                                                <li>Sens de la présentation</li>
+                                                <li>Clarté dans la rédaction</li>
+                                                <li>Adaptabilité au web responsive</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-ecomobilite.svg" alt="Site Écomobilité Playstation">
+                                        <div class="project-header-content">
+                                            <h3>Site Écomobilité Playstation</h3>
+                                            <p>Prototype de site web pour une solution de mobilité durable avec connexion et paiement.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet scolaire de site web fictif dans un univers éco-responsable.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Projet de design web limité au HTML/CSS, axé sur l'expérience utilisateur.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Création de l'interface, navigation et intégration visuelle du concept.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Maquette fonctionnelle et cohérente, bonne lisibilité et présentation du service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Présenter un service de mobilité durable tout en simplifiant l'accès aux fonctionnalités clés.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/sitePlaystation.png" alt="Illustration Écomobilité">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>Design de page et hiérarchie visuelle</li>
+                                                <li>Structuration de l'information</li>
+                                                <li>Maquette d'interface orientée utilisateur</li>
+                                                <li>Cohérence graphique et navigation</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Direction artistique</li>
+                                                <li>Esprit de synthèse</li>
+                                                <li>Organisation de l'information</li>
+                                                <li>Sens du détail visuel</li>
+                                                <li>Traduction d'un concept en page web</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-appariement.svg" alt="Appariement">
-                        <div>
-                            <h3>Applications d'appariements étudiants</h3>
-                            <p>Description du projet :</p>
-                        </div>
+            </section>
+            <section class="project-category" data-category="personal">
+                <div class="category-header">
+                    <div class="category-info">
+                        <span class="category-label">Projets personnels</span>
+                        <h2>Projets personnels</h2>
+                        <p>Projets réalisés en autonomie pour apprendre de nouvelles technologies, créer des prototypes ou explorer des idées personnelles.</p>
                     </div>
-                    <p>Ce projet avait pour but de créer une application qui permet de lier des adolescents participant à un séjour linguistique dans un appariement optimal à l’aide d’un score d'affinité. Pour cela, nous avons développé une application en
-                        Java en suivant un cahier des charges, mis en place et étudié des graphes pour l’appariement optimal et créé une interface fonctionnelle avec JavaFX.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Maîtriser le langage Java (types, fonctions, packages, ouvrir/fermer fichiers...)</li>
-                            <li>Maîtriser les théories des IHM (Bertin, Fitts...) pour créer une interface</li>
-                            <li>Maîtriser les théories des graphes (Chemin optimal, pondération…)</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Savoir communiquer</li>
-                            <li>Voir les difficultés de chacun pour favoriser l’entraide</li>
-                            <li>Savoir consulter et comprendre la documentation Java</li>
-                            <li>Savoir répartir les tâches entre les membres de l’équipe</li>
-                        </ul>
+                    <div class="category-controls">
+                        <button class="carousel-button prev" type="button" aria-label="Projet personnel précédent">‹</button>
+                        <button class="carousel-button next" type="button" aria-label="Projet personnel suivant">›</button>
                     </div>
                 </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-gamblor.svg" alt="Gamblor">
-                        <div>
-                            <h3>Gamblor</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Gamblor est un jeu de casino, gestion de stress et d'argent. Jouez à la roue, aux machines à sous ou au Blackjack, achetez des objets pour vous aider et gérez votre bankroll pour progresser.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Maîtriser le langage Java (types, fonctions, packages, ouvrir/fermer fichiers...)</li>
-                            <li>Équilibrer les fonctionnalités pour une expérience sans accroc</li>
-                            <li>Diviser pour régner</li>
-                            <li>Gestion de fichiers et organisation</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Savoir communiquer</li>
-                            <li>Voir les difficultés de chacun pour favoriser l’entraide</li>
-                            <li>Savoir consulter et comprendre la documentation Java</li>
-                            <li>Savoir répartir les tâches entre les membres de l’équipe</li>
-                        </ul>
+                <div class="project-carousel">
+                    <div class="project-track">
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-scans.svg" alt="Site de scans manga">
+                                        <div class="project-header-content">
+                                            <h3>Site de scans manga</h3>
+                                            <p>Prototype personnel de site de lecture mettant en avant du contenu traduit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet personnel pour explorer le web, le design et la gestion de contenu.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Travail individuel en dehors des cours, recherche de nouvelles compétences.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Conception du site, intégration HTML/CSS et organisation des contenus.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Prototype visuel orienté contenu, avec mise en valeur des scans et de la traduction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Construire une plateforme de présentation lisible et attractive pour des contenus manga traduits.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/project-scans.svg" alt="Illustration Site scans manga">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>Structuration de contenu</li>
+                                                <li>Gestion de projet personnel</li>
+                                                <li>Design web accessible</li>
+                                                <li>Mise en page adaptée au contenu</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Autonomie</li>
+                                                <li>Curiosité</li>
+                                                <li>Gestion du temps</li>
+                                                <li>Organisation</li>
+                                                <li>Priorisation de la lisibilité</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-unity.svg" alt="Jeu RTS Unity">
+                                        <div class="project-header-content">
+                                            <h3>Jeu RTS Unity</h3>
+                                            <p>Prototype de jeu de stratégie développé sur Unity pour explorer le moteur 3D.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet personnel visant à comprendre Unity et les mécaniques RTS.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Développement en autonomie en dehors des cours.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Programmation du gameplay, unités et règles du jeu.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Prototype fonctionnel avec interactions de base et exploration du moteur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Apprendre Unity, créer un jeu simple et tester des mécaniques de stratégie.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/project-unity.svg" alt="Illustration Jeu Unity">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>C#</li>
+                                                <li>Unity</li>
+                                                <li>Conception de gameplay</li>
+                                                <li>Prototypage de mécaniques interactives</li>
+                                                <li>Management de scènes et assets</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Autonomie</li>
+                                                <li>Curiosité technique</li>
+                                                <li>Apprentissage par expérimentation</li>
+                                                <li>Résolution de problèmes en temps réel</li>
+                                                <li>Gestion de versions de projet</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-calculatrice.svg" alt="Calculatrice Java">
+                                        <div class="project-header-content">
+                                            <h3>Calculatrice Java Swing</h3>
+                                            <p>Application de calculatrice pour maîtriser les interfaces graphiques en Java.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet personnel pour approfondir Java et Swing.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Développement individuel dans un objectif d'apprentissage.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Conception et réalisation complète de l'interface et des opérations.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Interface graphique opérationnelle pour calculs simples, avec retour utilisateur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Construire une application simple mais complète pour pratiquer les interfaces Swing.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/project-calculatrice.svg" alt="Illustration Calculatrice Java">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>Java</li>
+                                                <li>Swing</li>
+                                                <li>Gestion d'interfaces graphiques</li>
+                                                <li>Validation d'opérations et gestion d'erreurs</li>
+                                                <li>Conception de fenêtres fonctionnelles</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Autonomie</li>
+                                                <li>Rigueur</li>
+                                                <li>Organisation</li>
+                                                <li>Test systématique des flux</li>
+                                                <li>Attention aux détails d'interface</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-panel">
+                            <div class="project-card">
+                                <div class="project-summary">
+                                    <div class="project-header">
+                                        <img src="Images/project-roblox.svg" alt="Jeu Roblox">
+                                        <div class="project-header-content">
+                                            <h3>Jeu Roblox en Lua</h3>
+                                            <p>Expérience ludique sur Roblox pour maîtriser la programmation Lua et la création de mondes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta-grid">
+                                        <div class="project-meta-item">
+                                            <h4>Contexte</h4>
+                                            <p>Projet personnel réalisé au collège pour découvrir le développement de jeux.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Cadre</h4>
+                                            <p>Projet libre hors cursus scolaire.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Mon rôle</h4>
+                                            <p>Développement complet du gameplay et des interactions en Lua.</p>
+                                        </div>
+                                        <div class="project-meta-item">
+                                            <h4>Résultats</h4>
+                                            <p>Prototype fonctionnel sur Roblox avec mécaniques et interface de base.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card-section">
+                                    <div>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Apprendre Lua, créer un jeu simple et publier un univers interactif pour jouer.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Illustrations</h4>
+                                        <img class="project-illustration" src="Images/project-roblox.svg" alt="Illustration Jeu Roblox">
+                                    </div>
+                                    <div class="project-skills">
+                                        <div class="skill-group">
+                                            <h4>Compétences techniques</h4>
+                                            <ul>
+                                                <li>Lua</li>
+                                                <li>Développement de jeu</li>
+                                                <li>Création d'environnements interactifs</li>
+                                                <li>Programmation d'événements et de mécaniques</li>
+                                                <li>Optimisation simple de scripts</li>
+                                            </ul>
+                                        </div>
+                                        <div class="skill-group">
+                                            <h4>Compétences transversales</h4>
+                                            <ul>
+                                                <li>Curiosité</li>
+                                                <li>Apprentissage autonome</li>
+                                                <li>Créativité</li>
+                                                <li>Persévérance dans l'expérimentation</li>
+                                                <li>Adaptation aux contraintes de plateforme</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-cv.svg" alt="CV Numérique">
-                        <div>
-                            <h3>CV Numérique</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Ce CV numérique est la preuve du travail rigoureux réalisé ces dernières années — présentation, style, et hébergement.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Création de pages web (HTML)</li>
-                            <li>Stylisation des pages (CSS)</li>
-                            <li>Héberger un site web</li>
-                            <li>Gestion de fichiers et organisation</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Direction artistique</li>
-                            <li>Savoir documenter les projets réalisés</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-ecomobilite.svg" alt="Écomobilité Playstation">
-                        <div>
-                            <h3>Site Écomobilité Playstation</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Projet de site web pour une filiale fictive d’éco-mobilité : système de connexion, paiement, covoiturage et location. Limité au HTML/CSS pour le rendu final.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Création de pages web (HTML)</li>
-                            <li>Stylisation des pages (CSS)</li>
-                            <li>Gestion de fichiers et organisation</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Savoir communiquer</li>
-                            <li>Voir les difficultés de chacun pour favoriser l’entraide</li>
-                            <li>Direction artistique</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-
-        <div class="container">
-            <h2>Projets personnels</h2>
-            <div class="projects-grid">
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-scans.svg" alt="Site de scans manga">
-                        <div>
-                            <h3>Site de scans manga (en cours)</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Un site de scans et de traduction du manga pour offrir l'opportunité de lire cette œuvre. (En cours)</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Création de pages web (HTML)</li>
-                            <li>Stylisation des pages (CSS)</li>
-                            <li>Gestion de fichiers et organisation</li>
-                            <li>Gestion de Back-End avec BDD et sécurité</li>
-                            <li>Traduction</li>
-                            <li>Graphisme</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Marketing</li>
-                            <li>Autonomie</li>
-                            <li>Direction artistique</li>
-                            <li>Discipline</li>
-                            <li>Curiosité</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-unity.svg" alt="Jeu RTS Unity">
-                        <div>
-                            <h3>Jeu RTS basique sur Unity</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Tentative de créer en autonomie un jeu RTS sur Unity pour découvrir le moteur et les mécanismes de stratégie.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Algorithmie</li>
-                            <li>Apprentissage du C#</li>
-                            <li>Gestion de fichiers et organisation</li>
-                            <li>Apprentissage moteur de rendu</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Autonomie</li>
-                            <li>Documentation variée à consulter</li>
-                            <li>Discipline</li>
-                            <li>Curiosité</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-calculatrice.svg" alt="Calculatrice Java">
-                        <div>
-                            <h3>Calculatrice en Java Swing</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Projet personnel pour apprendre Java et construire une interface graphique simple avec Swing.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Algorithmie</li>
-                            <li>Apprentissage du Java</li>
-                            <li>Gestion de fichiers et organisation</li>
-                            <li>Apprentissage de plusieurs librairies Java</li>
-                            <li>Gestion d'interfaces</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Autonomie</li>
-                            <li>Discipline</li>
-                            <li>Curiosité</li>
-                            <li>Documentation variée à consulter</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project card">
-                    <div class="project-top">
-                        <img class="project-image" src="Images/project-roblox.svg" alt="Jeu Roblox">
-                        <div>
-                            <h3>Jeu Roblox en Lua</h3>
-                            <p>Description du projet :</p>
-                        </div>
-                    </div>
-                    <p>Projet réalisé au collège pour découvrir le développement de jeux sur la plateforme Roblox en Lua.</p>
-                    <p>Compétences mise en œuvre :</p>
-                    <div class="skills">
-                        <ul>Savoir Faire :
-                            <li>Algorithmie</li>
-                            <li>Apprentissage du Lua</li>
-                            <li>Gestion de fichiers et organisation</li>
-                            <li>Gestion d'interfaces</li>
-                        </ul>
-                        <ul>Savoir Être :
-                            <li>Autonomie</li>
-                            <li>Discipline</li>
-                            <li>Curiosité</li>
-                            <li>Documentation variée à consulter</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
     </main>
 
     <footer>
-        <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn : </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target=”_blank”> LinkedIn</a>
+        <p>© <span id="year"></span> Kylian Allard Guerente — E-Mail: kylianallard@gmail.com — LinkedIn : </p> <a href="https://www.linkedin.com/in/kylian-allard-guerente-207563346/" target="_blank"> LinkedIn</a>
     </footer>
 
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        document.querySelectorAll('.project-category').forEach(category => {
+            const track = category.querySelector('.project-track');
+            const panels = track.querySelectorAll('.project-panel');
+            const prevButton = category.querySelector('.carousel-button.prev');
+            const nextButton = category.querySelector('.carousel-button.next');
+            let currentIndex = 0;
+
+            const updateCarousel = () => {
+                track.style.transform = `translate3d(-${currentIndex * 100}%, 0, 0)`;
+            };
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + panels.length) % panels.length;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % panels.length;
+                updateCarousel();
+            });
+
+            updateCarousel();
+        });
     </script>
 </body>
 
